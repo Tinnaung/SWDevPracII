@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนบูธ</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div id="control-bar">
+        <a href="index.html">
+            <button id="back-button"></button>
+        </a>
+    </div>
+    <div id="reg-display">
+        <p id="reg-title">รับสมัครนักดูดวง</p>
+        <img src="img/lead-line-star.png" id="lead-line">
+        <div id="reg-form">
+            <form id="reg-data" name="data-sheet">
+                <label for="store-name">ชื่อร้าน</label>
+                <input type="text" id="store-name" name="storename" placeholder="your store name" size="36">
+                <label for="store-size-select">ขนาดบูธ</label>
+                <select id="store-size-select" name="store-size" size="1">
+                    <option value="10*10">10x10 ฟุต</option>
+                    <option value="10*15">10x15 ฟุต</option>
+                </select>
+                <div id="checkbox">
+                    <input type="checkbox" id="store-table-need" name="storetable"> 
+                    <p id="table-need-label">ต้องการโต๊ะตั้งในบูธ</p>
+                </div>
+                <label for="store-chair">จำนวนเก้าอี้</label>
+                <div id="chair-box">
+                    <input type="text" id="store-chair" name="storechair" placeholder="2" size="5">
+                    <p id="unit">ตัว</p>
+                </div>
+                <label for="store-regname">ชื่อผู้ติดต่อ</label>
+                <input type="text" id="store-regname" name="storeregname" placeholder="your name" size="36">
+                <label for="store-tel">เบอร์โทรผู้ติดต่อ</label>
+                <input type="text" id="store-tel" name="storetel" placeholder="your telephone number" size="36">
+            </form>
+            <button id="submit-button">SUBMIT</button>
+        </div>
+    </div>
+    
+</body>
+</html>
