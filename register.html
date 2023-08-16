@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ลงทะเบียนบูธ</title>
     <link rel="stylesheet" href="register.css">
+    <script src="script/register.js"></script>
 </head>
 <body>
     <div id="control-bar">
@@ -30,7 +31,7 @@
                 </div>
                 <label for="store-chair">จำนวนเก้าอี้</label>
                 <div id="chair-box">
-                    <input type="text" id="store-chair" name="storechair" placeholder="2" size="5">
+                    <input type="number" id="store-chair" name="storechair" placeholder="2" size="5">
                     <p id="unit">ตัว</p>
                 </div>
                 <label for="store-regname">ชื่อผู้ติดต่อ</label>
@@ -38,7 +39,7 @@
                 <label for="store-tel">เบอร์โทรผู้ติดต่อ</label>
                 <input type="text" id="store-tel" name="storetel" placeholder="your telephone number" size="36">
             </form>
-            <button id="submit-button">SUBMIT</button>
+            <button id="submit-button" onclick="check();">SUBMIT</button>
         </div>
     </div>
     
